@@ -111,3 +111,39 @@ ul{
 		color: #FFFFFF;
 	}
 }
+
+
+#background-grid{
+	position: fixed;
+	top: 0;
+	left: 50%;
+
+	transform: translateX(-37.4%);
+
+	z-index: -10000;
+
+	width: 100%;
+	height: 100vh;
+
+	@include container();
+
+	display: grid; 
+  	grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+	grid-template-rows: 1fr; 
+	gap: 1px;
+	
+	@media (max-width: $b-md) {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	@media (max-width: $b-sm) {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	span{
+		display: block;
+		background: #EDEDED;
+		width: 1px;
+		height: 100%;
+	} 
+}
