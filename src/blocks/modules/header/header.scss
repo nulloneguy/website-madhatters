@@ -1,20 +1,29 @@
 .header {
     position: relative;
+    border-bottom: 1px solid#EDEDED;;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 
-    max-height: 50px;
-    height: 50px;
+    max-height: 179px;
+    height: 179px;
+
+    &__decoration{
+        margin-bottom: 30px;
+        z-index: 100;
+    }
 
     &__logo {
+        display: block;
         font-size: 20px;
         z-index: 100;
         text-decoration: none;
         color: $accent;
+        margin-bottom: 30px;
 
         img {
             max-height: 100%;
@@ -73,8 +82,10 @@
 
     &__link {
         text-decoration: none;
-        color: $textcolor;
+        color: $linkcolor;
+        font-size: 16px;
         font-weight: 500;
+        font-weight: 300;
 
         &:hover {
             text-decoration: none;
@@ -112,7 +123,7 @@
             }
         }
 
-        &.active {
+        &._active {
             span {
                 background: none;
 
