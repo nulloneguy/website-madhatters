@@ -27,8 +27,21 @@
     </head>
     <body>
         @@include("../blocks/modules/header/header.html")
+        <main>
+            @@include("../blocks/modules/hello/hello.html")
+            @@include("../blocks/modules/features/features.html")
+        </main>
         @@include("../blocks/modules/footer/footer.html")
+
+        <div id="background-grid">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
         <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
+        <!-- <script src="js/vendor.js"></script> -->
     </body>
 </html>
