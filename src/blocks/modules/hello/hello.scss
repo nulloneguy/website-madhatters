@@ -1,4 +1,5 @@
 .hello{
+    position: relative;
 
     &__container{
         padding-top: 137px;
@@ -47,7 +48,7 @@
     &__decoration-circle{
         z-index: -1;
         position: absolute;
-        top: 46%;
+        top: 35%;
         right: 23%;
         padding: 120px;
         border: 1px solid #E9E9EA;
