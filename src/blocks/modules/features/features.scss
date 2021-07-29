@@ -1,6 +1,7 @@
 .features {
 
-    padding: 115px 0;
+    padding-top: 115px;
+    padding-bottom: 95px;
 
     &__container {
 
@@ -17,15 +18,13 @@
         @include size-lg(4);
         @include size-md(12);
         @include size-xs(12);
-        @media (max-width: $b-lg) {
-            margin-bottom: 40px;
-        }
     }
 }
 
 .item-features {
 
     &__body {
+        padding-bottom: 30px;
     }
 
     &__title {
@@ -36,20 +35,6 @@
         line-height: 51px;
         color: #111111;
         margin-bottom: 20px;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        &:before{
-            content: '';
-            display: block;
-            width: 9px;
-            height: 9px;
-            margin-right: 7px;
-            margin-top: 5px;
-            background-image: url('../../img/svg/decoration.svg');
-            background-repeat: no-repeat;
-        }
     }
 
     &__text {
