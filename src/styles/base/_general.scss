@@ -53,11 +53,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 	margin-bottom: 36px;
+	max-width: 100%;
 
 	color: $headercolor;
 	font-family: "Playfair Display", sans-serif;
 	font-size: rem(100);
 	line-height: 110px;
+
+	@media (max-width: 768px) {
+		font-size: rem(50);
+		line-height: 60px;
+	}
+
 }
 
 p{
@@ -146,4 +153,20 @@ ul{
 		width: 1px;
 		height: 100%;
 	} 
+}
+
+.has-decoration{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&:before{
+		content: '';
+		display: block;
+		width: 9px;
+		height: 9px;
+		margin-right: 7px;
+		margin-top: 5px;
+		background-image: url('../../img/svg/decoration.svg');
+		background-repeat: no-repeat;
+	}
 }
