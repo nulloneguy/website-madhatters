@@ -1,0 +1,48 @@
+.imgtitle {
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__row {
+        @include row-flex();
+        @include md(justify-content, center);
+    }
+
+    &__item {
+        @include col();
+        @include size(12);
+        @include size-lg(6);
+        @include size-md(12);
+        @include size-xs(12);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__image {
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+
+    &__text {
+        padding: 0 25px;
+        align-items: flex-start;
+        justify-content: space-between;
+        .btn{
+            margin-bottom: 0;
+        }
+        @media (max-width: $b-md) {
+            text-align: center;
+            .btn{
+                margin: 0 auto;
+            }
+            p{
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+        }
+    }
+}
