@@ -147,3 +147,19 @@ ul{
 		height: 100%;
 	} 
 }
+
+.has-decoration{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	&:before{
+		content: '';
+		display: block;
+		width: 9px;
+		height: 9px;
+		margin-right: 7px;
+		margin-top: 5px;
+		background-image: url('../../img/svg/decoration.svg');
+		background-repeat: no-repeat;
+	}
+}
