@@ -4,6 +4,7 @@
     &__container{
         padding-top: 137px;
         padding-bottom: 137px;
+        position: relative;
         @media (max-width: 768px) {
             padding-top: 0;
         }
@@ -50,7 +51,7 @@
         z-index: -1;
         position: absolute;
         top: 35%;
-        right: 23%;
+        right: 10rem;
         padding: 120px;
         border: 1px solid #E9E9EA;
         border-radius: 300px;
