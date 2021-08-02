@@ -1,4 +1,8 @@
-# gulp-scss-starter
+# Website Mad Hatters
+
+## Screenshot
+![screenshot](screenshot.png)
+
 
 ## :fire: Особенности
 * именование классов по [БЭМ](https://ru.bem.info/)
